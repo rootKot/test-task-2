@@ -1,0 +1,47 @@
+
+<div class="employees">
+  <h2>Employees</h2>
+
+  <table mat-table class="employees__table mat-elevation-z8" [dataSource]="employees">
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let employee">
+        <mat-checkbox (change)="selectEmployee(employee)"></mat-checkbox>
+      </td>
+    </ng-container>
+
+    <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef" >
+      <th mat-header-cell *matHeaderCellDef> {{column.title}} </th>
+      <td mat-cell *matCellDef="let employee">
+        <ng-container
+          *ngIf="column.dataKey === employeeDataKeyEnum.PaidRegularTimeAmount ||
+                   column.dataKey === employeeDataKeyEnum.OvertimePaidAmount"
+        >
+          {{employee[column.dataKey] | currency}}
+        </ng-container>
+        <ng-container
+          *ngIf="column.dataKey === employeeDataKeyEnum.Clocked"
+        >
+          {{employee[column.dataKey] | number}} h
+        </ng-container>
+        <ng-container
+          *ngIf="column.dataKey === employeeDataKeyEnum.Name || column.dataKey === employeeDataKeyEnum.Email"
+        >
+          {{employee[column.dataKey]}}
+        </ng-container>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="tableDisplayColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: tableDisplayColumns;"></tr>
+  </table>
+
+  <div class="employees__edit-btn">
+    <button mat-raised-button color="primary"
+            [disabled]="!isSelectedAnyRow"
+            (click)="edit()"
+    >
+      Bulk Edit
+    </button>
+  </div>
+</div>

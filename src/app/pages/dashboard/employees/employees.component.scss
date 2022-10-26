@@ -1,0 +1,11 @@
+.employees {
+  &__table {
+    width: 100%;
+  }
+
+  &__edit-btn {
+    margin: 10px 0;
+    display: flex;
+    justify-content: end;
+  }
+}

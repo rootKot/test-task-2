@@ -1,0 +1,38 @@
+<div class="general-information">
+  <mat-card class="general-information__card">
+    <mat-card-header>
+      <mat-card-title>Total number of employees</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="general-information__card__value">
+      {{employees.length}}
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="general-information__card">
+    <mat-card-header>
+      <mat-card-title>Total clocked in time</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="general-information__card__value">
+      {{totalClockedTime | number}} h
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="general-information__card">
+    <mat-card-header>
+      <mat-card-title>Total amount paid for regular hours</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="general-information__card__value">
+      {{totalPaidForRegularTime | currency}}
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="general-information__card">
+    <mat-card-header>
+      <mat-card-title>Total amount paid for overtime hours</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="general-information__card__value">
+      {{totalPaidForOvertime | currency}}
+    </mat-card-content>
+  </mat-card>
+
+</div>

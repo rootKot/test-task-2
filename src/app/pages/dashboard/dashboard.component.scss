@@ -1,0 +1,13 @@
+.dashboard {
+  padding: 45px 10%;
+
+  &__general-information {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    padding: 10px 10px;
+  }
+}

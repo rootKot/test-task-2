@@ -1,0 +1,80 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "David",
+      "email": "david@gmail.com",
+      "hourlyRate": 22,
+      "overtimeHourlyRate": 26
+    },
+    {
+      "id": 2,
+      "name": "Arthur",
+      "email": "arthur@gmail.com",
+      "hourlyRate": 19,
+      "overtimeHourlyRate": 28
+    }
+  ],
+  "employeeShifts": [
+    {
+      "employeeId": 1,
+      "clockIn": "Mon Oct 24 2022 09:00:00 GMT+0400",
+      "clockOut": "Mon Oct 24 2022 14:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 1,
+      "clockIn": "Mon Oct 24 2022 15:00:00 GMT+0400",
+      "clockOut": "Mon Oct 24 2022 18:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 1,
+      "clockIn": "Mon Oct 24 2022 09:00:00 GMT+0400",
+      "clockOut": "Mon Oct 24 2022 20:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 1,
+      "clockIn": "Mon Oct 24 2022 22:00:00 GMT+0400",
+      "clockOut": "Tue Oct 25 2022 01:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 1,
+      "clockIn": "Tue Oct 25 2022 09:10:00 GMT+0400",
+      "clockOut": "Tue Oct 25 2022 11:30:00 GMT+0400"
+    },
+    {
+      "employeeId": 1,
+      "clockIn": "Tue Oct 25 2022 13:05:00 GMT+0400",
+      "clockOut": "Tue Oct 25 2022 18:30:00 GMT+0400"
+    },
+    {
+      "employeeId": 2,
+      "clockIn": "Mon Oct 24 2022 09:00:00 GMT+0400",
+      "clockOut": "Mon Oct 24 2022 14:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 2,
+      "clockIn": "Mon Oct 24 2022 15:00:00 GMT+0400",
+      "clockOut": "Mon Oct 24 2022 18:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 2,
+      "clockIn": "Mon Oct 24 2022 09:00:00 GMT+0400",
+      "clockOut": "Mon Oct 24 2022 20:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 2,
+      "clockIn": "Mon Oct 24 2022 22:00:00 GMT+0400",
+      "clockOut": "Tue Oct 25 2022 01:00:00 GMT+0400"
+    },
+    {
+      "employeeId": 2,
+      "clockIn": "Tue Oct 25 2022 09:10:00 GMT+0400",
+      "clockOut": "Tue Oct 25 2022 11:30:00 GMT+0400"
+    },
+    {
+      "employeeId": 2,
+      "clockIn": "Tue Oct 25 2022 13:05:00 GMT+0400",
+      "clockOut": "Tue Oct 25 2022 18:30:00 GMT+0400"
+    }
+  ]
+}

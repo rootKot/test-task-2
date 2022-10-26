@@ -1,0 +1,19 @@
+
+.employees-edit-modal {
+
+  &__form-field {
+    display: flex;
+    /* justify-content: flex-start; */
+    align-content: space-between;
+
+    &__field {
+      padding-right: 5px;
+    }
+  }
+
+  &__shifts {
+    &__table {
+      width: 100%;
+    }
+  }
+}
